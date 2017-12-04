@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neveor - Details</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/app.css">
+    <script src="../js/details.bundle.js" defer></script>
+</head>
+<body>
+<header>
+
+    <nav>
+        <a href="#"> <img src="img/completelogoblue.png" class="logoimg"></a>
+        <a href="#" id="textplaceanadd" class="btn waves-effect waves-light">Place An Ad</a>
+        <a href="html/signin.html" id="textsignin" class="waves-effect waves-light btn-flat">Sign In</a>
+        <a href="html/signup.html" id="textsignup" class="btn waves-effect waves-light">Sign Up</a>
+    </nav>
+    <section class="search">
+        <div class="search-bars">
+            <div class="row">
+                <div class="col s2"></div>
+                <div class="col s2">
+                    <label class="labelsearch" for="searchcontentinput">What are you searching for?</label>
+                </div>
+                <div class="col s2">
+                    <label class="labelsearch" for="categorycontentinput">Which category?</label>
+                </div>
+                <div class="col s2">
+                    <label class="labelsearch" for="location-content-input">In which region are looking for?</label>
+                </div>
+                <div class="col s3"></div>
+            </div>
+            <div class="row input-row">
+                <div class="col s2"></div>
+                <div class="col s2 input-container">
+                    <div class="card">
+                        <div class="input-field">
+                            <input placeholder="Search ..." id="searchcontentinput" type="text" class="validate input-field-text">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s2 input-container">
+                    <div class="card">
+                        <div class="input-field">
+                            <input placeholder="For example : furniture, ..." id="categorycontentinput" type="text" class="validate input-field-text" list="categories">
+                            <datalist id="categories">
+
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s2 input-container">
+                    <div class="card">
+                        <div class="input-field">
+                            <input placeholder="For example : Ghent, Antwerp, .." id="location-content-input" type="text" class="validate input-field-text" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col s2">
+                    <a class="waves-effect waves-light btn btn-search"><i class="material-icons left">search</i>Search</a>
+                </div>
+                <div class="col s2"></div>
+            </div>
+            <div class="row">
+                <div class="col s4"></div>
+                <div class="col s2 text-add-filters">
+                    <a href="#" id="text-add-filters">+ Add More Filters</a>
+                </div>
+            </div>
+            <div class="extra-filters">
+                <div class="row">
+                    <div class="col s2"></div>
+                    <div class="col s2">
+                        <label class="labelsearch" >Price Range</label>
+                    </div>
+                    <div class="col s2">
+
+                    </div>
+                    <div class="col s2">
+                        <label class="labelsearch" for="searchcontentinput">Location Range</label>
+                    </div>
+                    <div class="col s3"></div>
+                </div>
+                <div class="row">
+                    <div class="col s2"></div>
+                    <div class="col s1">
+                        <label class="labelsearch" for="min_price">Minimum Price</label>
+                        <input placeholder="" id="min_price" type="number" class="validate input-field-price">
+                    </div>
+                    <div class="col s1">
+                        <label class="labelsearch" for="max_price">Maximum Price</label>
+                        <input placeholder="" id="max_price" type="number" class="validate input-field-price">
+                    </div>
+                    <div class="col s2">
+
+                    </div>
+                    <div class="col s1">
+                        <label class="placeholder">.</label>
+                        <input placeholder="" id="location_range" type="number" class="validate input-field-price">
+                    </div>
+                    <div class="col s2">
+                        <label class="placeholder">.</label>
+                        <p class="labelsearch"> km</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s2"></div>
+                    <div class="col s2">
+                        <div id="price-slider"></div>
+                    </div>
+                    <div class="col s2">
+                    </div>
+                    <div class="col s2">
+                        <div id="location-slider"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s4"></div>
+                    <div class="col s2 text-less-filters">
+                        <a href="#" id="text-less-filters">- Less Filters</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main>
+    <div class="item-list">
+
+    </div>
+</main>
+<div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="http://cdn.bmwblog.com/wp-content/uploads/2016/07/Frozen-Black-BMW-M3-4.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="http://www.moibbk.com/images/bmw-m-black-13.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
+</div>
+</body>
+</html>
